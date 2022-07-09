@@ -1,0 +1,292 @@
+* {
+	box-sizing: border-box;
+}
+
+.more{
+    display: inline-block;
+}
+
+.nav-item, .welcome, .news img, .x{
+    display: none;
+}
+
+.news span{
+    position: static;
+}
+
+.news p{
+    color: #000;
+}
+
+.news{
+    border-bottom: 1px solid #aaa;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+	width: 100%;
+}
+@media only screen and (min-width: 600px) {
+	/* For tablets: */
+	.col-m-1 {width: 8.33%;}
+	.col-m-2 {width: 16.66%;}
+	.col-m-3 {width: 25%;}
+	.col-m-4 {width: 33.33%;}
+	.col-m-5 {width: 41.66%;}
+	.col-m-6 {width: 50%;}
+	.col-m-7 {width: 58.33%;}
+	.col-m-8 {width: 66.66%;}
+	.col-m-9 {width: 75%;}
+	.col-m-10 {width: 83.33%;}
+	.col-m-11 {width: 91.66%;}
+	.col-m-12 {width: 100%;}
+    
+    .welcome{
+        display: block;
+    }
+
+    .news img{
+        display: initial;
+    }
+
+    .news{
+        border: none;
+    }
+
+    .images .news span{
+        position: absolute;
+    }
+
+    .images .news p{
+        color: #fff;
+    }
+}
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+
+    .more{
+        display: none;
+    }
+
+    .nav-item{
+        display: inline-block;
+    }
+
+    .x{
+        display: block;
+    }
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 5px;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+body{
+    margin: 0;
+}
+
+.row{
+    padding: 0 8%;
+}
+
+.navbar {
+    background-color: #000;
+    height: 40px;
+}
+
+.navbar > span{
+    border-style: ridge;
+    border-color: #fff;
+    border-width: 0 1px 0 0;
+    text-align: center;
+    height: 100%;
+    padding-top: 10px;
+    background-color: #000;
+}
+
+.navbar > span:first-of-type{
+    padding-top: 7px;
+}
+
+.logo span {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    display: inline-block;
+    width: 30px;
+    height: 27px;
+    font-size: 25px;
+}
+
+.welcome h3{
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.date {
+    text-align: right;
+}
+
+.heading{
+    color: #454545;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.sub-heading{
+    color: #454545;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.red{
+    border-left: 4px solid #f00;
+    padding-left: 5px;
+}
+
+.yellow{
+    border-left: 4px solid #ff0;
+    padding-left: 5px;
+}
+
+.blue{
+    border-left: 4px solid #59bfff;
+    padding-left: 5px;
+}
+
+.gray-back{
+    background-color: #eee;
+}
+
+.dark-back{
+    background-color: #454545;
+}
+
+.red-back{
+    background-color: #f00;
+    font-weight: bold;
+    padding: 7px 10px;
+}
+
+.gray-back{
+    background-color: #eee;
+}
+
+.rel{
+    position: relative;
+}
+
+.top-text{
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+}
+
+.text-white{
+    color: white;
+}
+
+.dull{
+    filter: brightness(65%);
+}
+
+img{
+    height: auto;
+    width: 100%;
+}
+
+.images > div{
+    padding: 3px;
+}
+
+.weather h2{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.weather div{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.weather p{
+    display: inline-block;
+}
+.editors-picks{
+    padding-top: 10px;
+}
+
+.latest-news p{
+    padding: 30px;
+    margin: 0;
+}
+
+.latest-news h3{
+    margin: 0;
+}
+
+.latest-news div:nth-of-type(2n){
+    background-color: #454545;
+}
+
+.latest-news div:nth-of-type(2n - 1){
+    background-color: #575757;
+}
+
+.latest-news span{
+    background-color: #f00;
+    border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.latest-news span b{
+    vertical-align: middle;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.pad{
+    padding: 10px 15px;
+}
+
+.featured div div{
+    background-color: #454545;
+}
+
+.med{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.announcement{
+    margin: 30px 0;
+}
+
+.newshour{
+    padding: 7px 0;
+}
+
